@@ -25,7 +25,7 @@ jobs:
         cache: maven
         
     - name: Running Test Automation Framework with Maven
-      run: mvn test -X -DisHeadless=false
+      run: mvn test -X -DisHeadless=true
      
     - name: Upload  Test logs
       if: always()
